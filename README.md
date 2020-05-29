@@ -1,12 +1,14 @@
 # Google Software Product Sprint
 
-This repo contains Weida Jiang's portfolio and SPS projects
+This repo contains Weida Jiang's portfolio and SPS projects.
 
-To get started:
+Email: jiangwd1992@gmail.com
 
-- Login to [Google Cloud Shell](https://ssh.cloud.google.com/cloudshell/editor)
-- Clone this repo: `cd; git clone https://github.com/google/software-product-sprint.git`
-- Open the GitHub setup walkthrough: `teachme ~/software-product-sprint/walkthroughs/week-0-setup/github-setup-walkthrough.md`
-  - If the tutorial panel does not open or display the walkthrough contents, try refreshing the page.
+Major: Computer Science
 
-Then follow the on-screen instructions to set up your repo.
+College: Borough of Manhattan Community College, transfer to University at Buffalo in the fall.
+
+Personal Link: https://weidajiang.github.io/
+
+
+Updated By 5/28/2020
