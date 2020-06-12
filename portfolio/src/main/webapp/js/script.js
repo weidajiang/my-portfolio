@@ -26,3 +26,11 @@ function addRandomInfo() {
   const infoContainer = document.getElementById('info-container');
   infoContainer.innerText = random_info;
 }
+
+// async request to the backend and fetch the data
+async function getRandomMottoUsingAsyncAwait() {
+  const response = await fetch('/random_motto');
+  const quote = await response.text();
+  document.getElementById('motto-container').innerText = quote;
+}
+
