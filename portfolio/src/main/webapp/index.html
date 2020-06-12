@@ -18,12 +18,8 @@
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
-
-
 </head>
-
 <body>
-
 <div class="w3-banner-top">
     <div class="agileinfo-dot">
         <div class="w3layouts_menu">
@@ -60,25 +56,25 @@
                         <li>
                             <ul class="agileits-address-text ">
                                 <li class="agile-it-adress-left"><b>D.O.B</b></li>
-                                <li><span>:</span>12-10-1900</li>
+                                <li><span id = "birthday">:</span></li>
                             </ul>
                         </li>
                         <li>
                             <ul class="agileits-address-text">
                                 <li class="agile-it-adress-left"><b>PHONE</b></li>
-                                <li><span>:</span>(+1) 646 000 0000</li>
+                                <li><span id="phone_number">: </span></li>
                             </ul>
                         </li>
                         <li>
                             <ul class="agileits-address-text">
                                 <li class="agile-it-adress-left"><b>ADDRESS</b></li>
-                                <li><span>:</span> New York, NY, USA</li>
+                                <li><span id= "address">:</span> </li>
                             </ul>
                         </li>
                         <li>
                             <ul class="agileits-address-text">
                                 <li class="agile-it-adress-left"><b>E-MAIL</b></li>
-                                <li><span>:</span><a href="mailto:example@mail.com"> jiangwd1992@gmail.com</a></li>
+                                <li><span>:</span><a href="mailto:example@mail.com" id= "email"></a></li>
                             </ul>
                         </li>
                     </ul>
@@ -112,7 +108,7 @@
                         is a big problem in any circumstance. Therefore, I took many ESL courses, and then went to Borough of Manhattan Community College
                         in order to make my American dream come true. In the last four years, I have learned a lot and met many people with similar
                         backgrounds. We are all striving hard to achieve our dreams.</p>
-                    <!--> add a entry for calling my js function <-->    
+                    <!-- add a entry for calling my js function -->    
                     <h3><a href="javascript:getRandomMottoUsingAsyncAwait();">Motto</a></h3>
                     <h5 id="motto-container">The attitude towards things determines someone’s destiny, and the key to success is the ability to capture details</h5>
 
@@ -460,16 +456,19 @@
             event.preventDefault();
             $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
         });
+
+        
+
+
     });
 </script>
 
 <script type="text/javascript">
     $(document).ready(function () {
         $().UItoTop({easingType: 'easeOutQuart'});
+       
 
     });
 </script>
-
-
 </body>
 </html>
