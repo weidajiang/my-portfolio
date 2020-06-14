@@ -19,7 +19,7 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </head>
-<body>
+<body onload="loadComments()">
 <div class="w3-banner-top">
     <div class="agileinfo-dot">
         <div class="w3layouts_menu">
@@ -30,6 +30,9 @@
                     <li><a href="#about" class="scroll"><span>About</span></a></li>
                     <li><a href="#experiences" class="scroll"><span>Experiences</span></a></li>
                     <li><a href="#projects" class="scroll"><span>Projects</span></a></li>
+                    <li><a href="#comments" class="scroll"><span>Comments</span></a></li>
+                    <li><a href="#commentlist" class="scroll"><span>Commentlist</span></a></li>
+
                 </ul>
                 <span aria-hidden="true" class="stretchy-nav-bg"></span>
             </nav>
@@ -385,6 +388,53 @@
         $('.filtr-container').filterizr();
     });
 </script>
+
+<div class="contact" id="comments">
+    <div class="container">
+        <div class="w3ls-heading">
+            <h3>Comments</h3>
+        </div>
+        <div class="contact-w3ls">
+            <div style="width:100%;text-align:center;">
+                <form action="/comments" method="post">
+                    <div class="col-md-7 col-sm-7 contact-left agileits-w3layouts">
+                        <input type="text" id="firstname" name="firstname" placeholder="First Name" required="">
+                        <input type="text" id="lastname" name="lastname" placeholder="Last Name" required="">
+                        <input type="email" id="email" class="email" name="email" placeholder="Email" required="">
+                    </div>
+                    <div class="col-md-5 col-sm-5 contact-right agileits-w3layouts">
+                        <textarea name="comment" id="comment" placeholder="Message" required=""></textarea>
+                        <input type="submit" value="Submit">
+                    </div>
+                    <div class="clearfix"> </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="w3-about" id="commentlist">
+    <div class="container">
+        <div class="w3-about-head">
+            <h3>  <img src="images/bird.gif" width="7%">Comment List</h3>
+        </div>
+        <div class="w3-about-grids">
+            <div class=" w3-about-grids1">
+                <div class="col-md-6 w3-about-grid-left1">
+                    <img src="images/c3.gif" alt="img1" height="80%">
+                </div>
+
+                <div id="cList">
+                    
+                </div>                
+                <div class="clearfix"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!-- footer -->
 <div class="w3l_footer">

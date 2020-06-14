@@ -44,4 +44,29 @@ $(document).ready(function () {
     });
 });
 
+function loadComments() {
+  fetch('/comments').then(response => response.json()).then((commentLists) => {   
+    var cList="";
+    //console.log(commentLists);
+    // create div according to the length of comments lisk
+    commentLists.forEach((comment) => {
+       var date = new Date(comment.timestamp);
+       cList+="                <div class=\"col-sm-5\">\n" +
+                "                    <div class=\"panel panel-default\">\n" +
+                "                        <div class=\"panel-heading\">\n" +
+                "                            <strong>"+comment.firstName+" "+comment.lastName+"</strong> <span class=\"text-muted\">commented by "+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate()+" "+ date.getHours()+":"+ date.getMinutes() +"</span>" +
+                "                        </div>\n" +
+                "                        <div class=\"panel-body\">\n" +
+                                            comment.comment+"\n" +
+                "                        </div>\n" +
+                "                    </div>\n" +
+                "                </div>";
+    })
+
+    $("#cList").html(cList);
+
+  });
+}
+
+
 
