@@ -34,3 +34,14 @@ async function getRandomMottoUsingAsyncAwait() {
   document.getElementById('motto-container').innerText = quote;
 }
 
+// make a request to backend and get my info back
+$(document).ready(function () {  
+    fetch('/info').then(response => response.json()).then((person) => {
+    $("#phone_number").append(person.phone_number);
+    $("#email").append(person.email);
+    $("#address").append(person.address);
+    $("#birthday").append(person.birthday);          
+    });
+});
+
+
