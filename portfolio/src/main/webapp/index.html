@@ -20,9 +20,22 @@
     <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body onload="loadComments()">
+
 <div class="w3-banner-top">
     <div class="agileinfo-dot">
         <div class="w3layouts_menu">
+            <div class="btn-group">
+                <button type="button" class="btn btn-danger">Language</button>
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                   <li><a href="javascript:changeLanguege('zh');">zh</a></li>
+                   <li><a href="javascript:changeLanguege('en')">en</a></li>
+                   <li><a href="javascript:changeLanguege('es')">es</a></li>  
+                 </ul>
+        </div>
             <nav class="cd-stretchy-nav edit-content">
                 <a class="cd-nav-trigger" href="#0"> Menu <span aria-hidden="true"></span> </a>
                 <ul>
@@ -50,9 +63,8 @@
                 <div class="w3-banner-text">
                     <h3>Personal Info & Career Goal</h3>
                     <!-- Week2 Step1, add a link to request servlet -->
-                    <p>My name is <a href="/data">Weida Jiang</a>, I graduated at Borough of Manhattan Community College  with major in Computer Science, and will go to University at Buffalo in the fall. </p>
-                    <p>My goal is to be a full stack programmer or IOS developer </p>
-
+                    <p id ="intro1" >My name is Weida Jiang, I graduated at Borough of Manhattan Community College  with major in Computer Science, and will go to University at Buffalo in the fall. </p>
+                    <p id ="intro2" >My goal is to be a full stack programmer or IOS developer </p>
                 </div>
                 <div class=" w3-right-addres-1">
                     <ul class="address">
@@ -427,6 +439,11 @@
 
                 <div id="cList">
                     
+
+
+
+
+                
                 </div>                
                 <div class="clearfix"></div>
 
