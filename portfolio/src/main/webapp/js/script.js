@@ -12,6 +12,27 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+
+
+function changeLanguege(language) {
+       
+    const text = document.getElementById('intro1').innerText;
+    const resultContainer = document.getElementById('intro1');
+    resultContainer.innerText = 'Loading...';
+
+    const params = new URLSearchParams();
+    params.append('text', text);
+    params.append('languageCode', language);
+
+    fetch('/translate', {
+          method: 'POST',
+          body: params
+    }).then(response => response.text())
+    .then((translatedMessage) => {
+        resultContainer.innerText = translatedMessage;
+    });
+}
+
 /**
  * Adds a random greeting to the page.
  */
