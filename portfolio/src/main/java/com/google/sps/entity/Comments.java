@@ -4,14 +4,15 @@ package com.google.sps.entity;
 import java.util.Date;
 
 public class Comments {
-    private long cid;
+    private long id;
     private String firstName;
     private String lastName;
     private String email;
     private String comment;
     private long timestamp;
 
-    public Comments(String firstName, String lastName, String email, String comment, long timestamp) {
+    public Comments(long id, String firstName, String lastName, String email, String comment, long timestamp) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -23,12 +24,12 @@ public class Comments {
 
     }
 
-    public long getCid() {
-        return cid;
+    public long getId() {
+        return id;
     }
 
-    public void setCid(long cid) {
-        this.cid = cid;
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getFirstName() {
